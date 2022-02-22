@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\expression_syntax">
+      <UniqueIdentifier>{ea460c96-5925-499f-97d1-1b020f5b86d8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cute.cpp">
@@ -24,6 +27,18 @@
     <ClCompile Include="syntax_token.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="syntax_node.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="number_expression_syntax.cpp">
+      <Filter>Source Files\expression_syntax</Filter>
+    </ClCompile>
+    <ClCompile Include="binary_expression_syntax.cpp">
+      <Filter>Source Files\expression_syntax</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lexer.h">
@@ -31,6 +46,21 @@
     </ClInclude>
     <ClInclude Include="syntax_token.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="parser.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="syntax_node.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="number_expression_syntax.h">
+      <Filter>Source Files\expression_syntax</Filter>
+    </ClInclude>
+    <ClInclude Include="binary_expression_syntax.h">
+      <Filter>Source Files\expression_syntax</Filter>
+    </ClInclude>
+    <ClInclude Include="expression_syntax.h">
+      <Filter>Source Files\expression_syntax</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

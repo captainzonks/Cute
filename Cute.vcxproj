@@ -139,12 +139,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="binary_expression_syntax.cpp" />
     <ClCompile Include="cute.cpp" />
     <ClCompile Include="lexer.cpp" />
+    <ClCompile Include="number_expression_syntax.cpp" />
+    <ClCompile Include="parser.cpp" />
+    <ClCompile Include="syntax_node.cpp" />
     <ClCompile Include="syntax_token.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="binary_expression_syntax.h" />
+    <ClInclude Include="expression_syntax.h" />
     <ClInclude Include="lexer.h" />
+    <ClInclude Include="number_expression_syntax.h" />
+    <ClInclude Include="parser.h" />
+    <ClInclude Include="syntax_node.h" />
     <ClInclude Include="syntax_token.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
