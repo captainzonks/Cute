@@ -88,6 +88,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)\headers</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -102,6 +103,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)\headers</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -139,22 +141,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="binary_expression_syntax.cpp" />
-    <ClCompile Include="cute.cpp" />
-    <ClCompile Include="lexer.cpp" />
-    <ClCompile Include="number_expression_syntax.cpp" />
-    <ClCompile Include="parser.cpp" />
-    <ClCompile Include="syntax_node.cpp" />
-    <ClCompile Include="syntax_token.cpp" />
+    <ClCompile Include="source\binary_expression_syntax.cpp" />
+    <ClCompile Include="source\cute.cpp" />
+    <ClCompile Include="source\lexer.cpp" />
+    <ClCompile Include="source\number_expression_syntax.cpp" />
+    <ClCompile Include="source\parser.cpp" />
+    <ClCompile Include="source\syntax_node.cpp" />
+    <ClCompile Include="source\syntax_token.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="binary_expression_syntax.h" />
-    <ClInclude Include="expression_syntax.h" />
-    <ClInclude Include="lexer.h" />
-    <ClInclude Include="number_expression_syntax.h" />
-    <ClInclude Include="parser.h" />
-    <ClInclude Include="syntax_node.h" />
-    <ClInclude Include="syntax_token.h" />
+    <ClInclude Include="headers\binary_expression_syntax.h" />
+    <ClInclude Include="headers\expression_syntax.h" />
+    <ClInclude Include="headers\lexer.h" />
+    <ClInclude Include="headers\number_expression_syntax.h" />
+    <ClInclude Include="headers\parser.h" />
+    <ClInclude Include="headers\syntax_node.h" />
+    <ClInclude Include="headers\syntax_token.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

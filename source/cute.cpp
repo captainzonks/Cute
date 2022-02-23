@@ -4,6 +4,8 @@
 #include "lexer.h"
 #include "parser.h"
 
+class syntax_node;
+
 static void pretty_print(syntax_node* node, std::string indent = "")
 {
 	std::cout << indent;

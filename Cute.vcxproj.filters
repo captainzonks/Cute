@@ -16,51 +16,54 @@
     <Filter Include="Source Files\expression_syntax">
       <UniqueIdentifier>{ea460c96-5925-499f-97d1-1b020f5b86d8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\expression_syntax">
+      <UniqueIdentifier>{e81a3b94-9726-46de-a02f-3304795396fe}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="cute.cpp">
+    <ClCompile Include="source\cute.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="lexer.cpp">
+    <ClCompile Include="source\lexer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="syntax_token.cpp">
+    <ClCompile Include="source\syntax_token.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="parser.cpp">
+    <ClCompile Include="source\parser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="syntax_node.cpp">
+    <ClCompile Include="source\syntax_node.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="number_expression_syntax.cpp">
+    <ClCompile Include="source\number_expression_syntax.cpp">
       <Filter>Source Files\expression_syntax</Filter>
     </ClCompile>
-    <ClCompile Include="binary_expression_syntax.cpp">
+    <ClCompile Include="source\binary_expression_syntax.cpp">
       <Filter>Source Files\expression_syntax</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="lexer.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="headers\lexer.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="syntax_token.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="headers\parser.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="parser.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="headers\syntax_node.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="syntax_node.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="headers\syntax_token.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="number_expression_syntax.h">
-      <Filter>Source Files\expression_syntax</Filter>
+    <ClInclude Include="headers\binary_expression_syntax.h">
+      <Filter>Header Files\expression_syntax</Filter>
     </ClInclude>
-    <ClInclude Include="binary_expression_syntax.h">
-      <Filter>Source Files\expression_syntax</Filter>
+    <ClInclude Include="headers\expression_syntax.h">
+      <Filter>Header Files\expression_syntax</Filter>
     </ClInclude>
-    <ClInclude Include="expression_syntax.h">
-      <Filter>Source Files\expression_syntax</Filter>
+    <ClInclude Include="headers\number_expression_syntax.h">
+      <Filter>Header Files\expression_syntax</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
