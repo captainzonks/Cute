@@ -2,6 +2,7 @@
 #include <vector>
 
 enum class syntax_kind;
+class syntax_token;
 
 class syntax_node
 {

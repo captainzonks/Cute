@@ -51,6 +51,4 @@ private:
 	int position_{};
 	int value_{};
 	std::string text_;
-
-
 };

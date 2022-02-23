@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <string>
 
 #include "lexer.h"
@@ -6,9 +6,14 @@
 
 class syntax_node;
 
-static void pretty_print(syntax_node* node, std::string indent = "")
+static void pretty_print(syntax_node* node, std::string indent = "", bool is_last = true)
 {
+	if (!node) return;
+
+	const std::string marker = is_last ? "/__" : "|==";
+
 	std::cout << indent;
+	std::cout << marker;
 
 	switch (node->get_kind())
 	{
@@ -48,7 +53,7 @@ static void pretty_print(syntax_node* node, std::string indent = "")
 	case syntax_kind::binary_expression:
 		std::cout << "Binary Exp " << std::endl;
 		break;
-	default:;
+	default: ;
 	}
 
 	syntax_token* token_node = dynamic_cast<syntax_token*>(node);
@@ -58,11 +63,11 @@ static void pretty_print(syntax_node* node, std::string indent = "")
 		std::cout << token_node->get_value() << std::endl;
 	}
 
-	indent += "    ";
+	indent += is_last ? "    " : "|   ";
 
 	for (syntax_node& child : node->get_children())
 	{
-		pretty_print(&child, indent);
+		pretty_print(&child, indent, is_last);
 	}
 }
 
@@ -111,5 +116,3 @@ int main()
 	}
 	return 0;
 }
-
-
